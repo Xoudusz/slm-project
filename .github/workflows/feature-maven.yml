@@ -6,7 +6,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Java CI with Maven
+name: CI for Feature Branch
 
 on:
   push:
@@ -32,7 +32,7 @@ jobs:
         uses: actions/download-artifact@v2.1.1
         with:
           # Artifact name
-          name: test.jar
+          name: Build
           # Destination path
-          path: /jar
+          path: download
 
