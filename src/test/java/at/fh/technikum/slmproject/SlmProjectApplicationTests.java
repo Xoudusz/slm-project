@@ -27,4 +27,16 @@ class SlmProjectApplicationTests {
         this.controller.setMessage(message);
         assertEquals(this.controller.getMessage(), message);
     }
+
+    @Test
+    public void
+    resetMessageTest(){
+
+        String message = "Service checks: No power until 5:00 pm";
+        this.controller.setMessage(message);
+        assertEquals(this.controller.getMessage(), message);
+
+        this.controller.resetMessage();
+        assertEquals(this.controller.getMessage(), "Everything works as expected");
+    }
 }
