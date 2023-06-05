@@ -17,4 +17,9 @@ public class MessageController {
         message = newMessage;
         return "ok";
     }
+    @GetMapping("/api/message/reset")
+    public String resetMessage() {
+        message = "Everything works as expected";
+        return "ok";
+    }
 }
