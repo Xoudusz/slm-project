@@ -8,7 +8,7 @@ public class MessageController {
     private String message = "Everything works as expected";
 
     @GetMapping("/api/message")
-    String getMessage() {
+    public String getMessage() {
         return message;
     }
 
